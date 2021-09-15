@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sub(fname, lname) {
+            //console.log(fname.value);
+            //console.log(lname.value);
+            var idValue = document.getElementById('fn');
+            var idValue1 = document.getElementById('ln');  
+         console.log(idValue.value) 
+         console.log(idValue1.value)
+        }
+    </script>
+</head>
+<body>
+    <h3>DOM Object</h3>
+
+    First Name : <input type="text"id="fn"><br><br>
+    Last Name : <input type="text"id="ln"><br><br>
+    <button onclick="sub(fn, ln)">Submit</button>
+
+</body>
+</html>

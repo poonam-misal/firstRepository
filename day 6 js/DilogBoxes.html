@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showAlert() {
+            alert('Are u sure');
+            console.log('Hello Alert is called');                 //only one btn is avaible
+        }
+
+
+        function showConfirm() {
+            var res = confirm('are u confirm');
+             console.log('res');
+             if (res==true) {                                    //2 btn are avalble
+    console.log('u r in if');
+    
+}
+                   else {
+              console.log('u r in false');
+         }
+        }
+
+ function showPromot() {
+    var res1= prompt('plz enter yes or no');
+    console.log(res1);
+    if (res1 == "yes") {                                              //sring gives  in "_".
+        // console.log('ok');
+        window.location="http:/www.google.com"
+    }
+        else{
+            // console.log('not ok');                                     //i/p from user.
+           window.location.href="E:\Ecommerce/webside_desine.html"
+        }
+    }
+
+    </script>
+</head>
+<body>
+    <h3>Alert</h3>
+    <button onclick="showAlert()">ALERT</button>
+
+    <h3>Confirm</h3>
+    <button onclick="showConfirm()">CONFIRM</button>
+
+    <h3>promt</h3>
+    <button onclick="showPromot()">PROMOT</button>
+     
+</body>
+</html

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String1</title>
+    <!-- <script>
+        function replace(){
+            document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML .replace("STRING", "STYLE")
+        }
+    </script> -->
+    
+   
+</head>
+<body>
+<!--    
+<div >
+    <h5 id="demo" onclick="replace()">JAVASCRIPT STRING</h5>
+    
+</div> -->
+<div >
+    <h5 id="demo">JAVASCRIPT STRING</h5>
+    
+</div>
+<div>
+    <h3 id="demo1"> poonam pawar</h3>
+</div> 
+<div>
+<h1 id="demo2">poonam misal</h1>
+</div>
+
+<p id="demo3">Lorem ipsum dolor sit amet.</p>
+
+
+
+<script>
+   //1  indexOf     
+    var test = document.getElementById("demo").innerHTML;
+    var tes1 = test.indexOf('string');
+    console.log(tes1);
+
+     //2   repalce
+     
+    var test2 = document.getElementById("demo1").innerHTML;
+    var test3 = test2.replace("pawar", "misal");
+     var x = (test3);
+     
+     function rep(x){
+     return x;
+    }
+    var test2 = document.getElementById("demo1").innerHTML = x;
+
+
+
+    //3 concatination
+     var test4 = document.getElementById("demo2").innerHTML;
+    var test5 = test4.substr(0 , 7) + "vikas " + test4.slice(7,12);
+    console.log(test5);
+    function rp(test5){
+     return test5;
+    }
+    var test4 = document.getElementById("demo2").innerHTML = (test5);
+    
+
+
+    //4 uppercase
+     var test6 = document.getElementById("demo").innerHTML;
+    var test7 = test6.slice(0,4)
+    var test8 = test7.toLocaleLowerCase() + test6.slice(4,17);
+    console.log(test8);
+    function upp(){
+        return test8;
+    }
+    var test7 = document.getElementById("demo").innerHTML = test8;
+
+
+   // 5 split
+   var test9 = document.getElementById("demo3").innerHTML;
+   var test10 = test9.split(' ');
+   function sp(){
+       return test10;
+   }
+   var test9 = document.getElementById("demo3").innerHTML = test10;
+
+
+   //6 lowercase
+   var test11 = document.getElementById("demo3").innerHTML;
+   var test12 = test11.slice(0, 5) + test11.toLocaleUpperCase() + test11.slice(12,17);
+
+   function low(){
+       return test12;
+   }
+ var test11 = document.getElementById("demo3").innerHTML = test12;
+   </script>
+        
+</body>
+</html>
+
