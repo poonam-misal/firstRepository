@@ -29,14 +29,14 @@ var test2 = 3 + '9' + 1 + 2 + '4' + '5';
 
 
 var test3 = 5 - 6;
-console.log(test3);
-console.log(typeof(test3));
-var test4 = 5- 6 + '8';
-console.log(test4);
-console.log(typeof(test4));
+console.log(test3);                              //-1
+console.log(typeof(test3));                   //number
+var test4 = 5- 6 + ' 8';
+console.log(test4);                                 //-1 8
+console.log(typeof(test4));                       //string
 var test5 = 'a' - 'b'
-console.log(test5);
-console.log(typeof(test5))
+console.log(test5);                                //NaN
+console.log(typeof(test5))                     //number
 
 
 

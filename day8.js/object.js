@@ -19,8 +19,9 @@ person.age = 25;
 person.eat = function(){
     console.log("person is etting")
 }
-//console.log(person)
-//console.log(person.eat())
+console.log(person)                             //{ name: 'someone', age: 25, eat: [Function (anonymous)] }
+console.log(person.eat())                      //undefined
+console.log(person.name)
 
  //var obj = {};
 
@@ -28,8 +29,8 @@ person.eat = function(){
  var person = new Object();
  person.name = "xyz";
  person.age = 10;
-console.log(person);
-console.log(typeof(person));
+//console.log(person);                          //{ name: 'xyz', age: 10 }
+//console.log(typeof(person));
 
 
 
