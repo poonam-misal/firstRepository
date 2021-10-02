@@ -1,10 +1,17 @@
-//cookirs
- /*
+//srorage option:-----> store data of user which can be used later. 
+//there are 3 type:---->1> cookies
+//                      2> local storage
+//                      3> session storage
+
+
+
+//cookies :----->syntax:----> document.cookie = "cookoiesName = cookiesValue ; expires: expirDate".
+ //some limitation -----> less secure , maxmimum limit 4k , per website only 20 cookies stored.,any one can disable cookies
   document.cookie = 'cityPune';
   data = [1,2,3]
   var myCookies = document.cookie;
   console.log(myCookies);
-*/
+
 
  
 document.cookie="username=javascipt ";
@@ -14,14 +21,11 @@ console.log(myCookie)
 
 
 
-
-
-
 //local storage:
 
 data = "CTS Pune";
 
-localStorage.setItem('compnyName', data);
+localStorage.setItem('compnyName', data);             //key,value.
 
 var res = localStorage.getItem('compnyName');
 

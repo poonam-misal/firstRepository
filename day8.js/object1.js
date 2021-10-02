@@ -55,7 +55,7 @@ console.log(car1.__proto__);
 
 var a = {fname:"lmn"};
 var b = {lname:"opq"};
-var per = Object.assign(a,b);
+var per = Object.assign({age:29},a,b);
 console.log(per)
 
 

@@ -1,3 +1,5 @@
+
+
 var test1 = "Claritech solutions, Pune";
 
 console.log(test1);
@@ -10,9 +12,9 @@ console.log(test1.valueOf());
 
 //       .charAt()
 var test2 = test1.charAt(5);
-console.log(test2);                     //    t====> after 5
+console.log(test2);                     //    t====> index 5   return value of that index character.
 
-var test2 = test1.charAt(10);            // space aslo include after 10
+var test2 = test1.charAt(10);            // space aslo include 
 console.log(test2);        
 
 var test2 = test1.charAt(21);
@@ -41,19 +43,19 @@ console.log(test4);
 
 
 //7. .indexOf()
-var test5 = test1.indexOf('Pune');                //21  ===>P start from 21 no.
+var test5 = test1.indexOf('Pune');                // will retrun start index of sting (21  ===>P start from 21 no.)
 console.log(test5);
 
 var test5 = test1.indexOf('Mumbai');
-console.log(test5);                              //-1     ===>not defined mumbai
+console.log(test5);                              //-1     ===>not defined mumbai if it not avaiable  the p will be -1
 
 //8.      .replace()
-var test6 = test1.replace('Pune', 'Mumbai');     //it will find the value Pune then replace the mumbai
+var test6 = test1.replace('Pune', 'Mumbai');     //it will find the value then replace the another.
 console.log(test6);                              //otherwise original sring will be display.
 
 
 //9.   .search()
-var test7 = test1.search('Pune');                 //21     find 1st Pune
+var test7 = test1.search('Pune');                 //(21     find 1st Pune )will retrun start index of sting 
 console.log(test7);
 
 var test7 = test1.search('mumbai');                 //-1       notfinding
@@ -71,7 +73,8 @@ console.log(test8);                                 //3==r    4==i
 var test9 = test1.split('Claritech');
 console.log(test9);
 //will return new array depending on provided condition & that condition willbe removed from new array.
-
+ var A = test1.split(' ');
+ console.log(A);
 
 
 
@@ -88,7 +91,8 @@ var test12 = test1.toLocaleUpperCase();
 console.log(test12);
 
 
-
+var test13 = test1.lastIndexOf("solution");
+console.log(test13);
 
 
 

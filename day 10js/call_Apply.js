@@ -1,4 +1,4 @@
-
+//this keyword referce the current element.
 var stud = {
     fname : "alex",
     lname : "simi",
@@ -27,7 +27,7 @@ var student = {
 var getHobbies = function (hobby1, hobby2) {
     console.log(this.getFullName() +' is having hobbis like ' + hobby1 +' and '+ hobby2);
 }
-   getHobbies.call( student, 'watching movies','cricket');
-   getHobbies.apply(student, ['watching Movies','Cricket']);
+   getHobbies.call( student, 'watching movies','cricket');      //parameter passes with comma( , ) sepreted.
+   getHobbies.apply(student, ['watching Movies','Cricket']);    //parameter passes with array.
 
 

@@ -1,13 +1,13 @@
-//type of operater
+//type of operater--->declered the type data.
 
 var x = "CTS Pune";
 var y = [1, 2, 3, 4];
 
 //console.log(typeof(x));
-
 //console.log(typeof(y));
 
-//ternory operater
+
+//ternory operater---->
 
 //(condition) ? 'option1' : 'option2';
 

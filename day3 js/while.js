@@ -1,3 +1,5 @@
+//while:--->loops through a block of code while a specified condition is true.
+
 var count = 3;
 
 while(count < 10){
@@ -6,13 +8,14 @@ while(count < 10){
 }
 
 
-/*
+//dowhile:---->  code of block is execated before testing condition.
+
 var counter = 10;
 do{
     console.log('correct');
     counter ++;
 }
-while(counter < 15);*/
+while(counter < 15);
 
 
 var counter = 16;
