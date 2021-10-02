@@ -1,3 +1,6 @@
+//logical:---->op is an true or false.
+//AND(&&) , OR(||) , NOT(!=).
+
 var test1 = true;
 var test2 = false;
 //console.log(test1 && test2);                      //AND

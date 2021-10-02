@@ -1,3 +1,7 @@
+//switch:---->to select one of many block of code to be executed.
+//time consuming.
+
+
 
 /*console.log(new Date().getDay());
 var day;
@@ -33,22 +37,43 @@ console.log('day');*/
 
 
 var text;
-switch (document.getElementById('text')) {
-    case "Banana":
+switch(new Date().getDay()) {
+        case 1:
         text = "good";
-        
         break;
 
-        case "mango":
+        case 2:
         text = "bad";
         
         break;
+
+        case 3:
+         text="almost bad";
+        break;
+
+
+         case 4:
+          text="almost good";
+          break;
+
+
+        case 5:
+         text="very bad";
+        break;
+
+        case 6:
+        text="very good";
+        break;
+
+        case 0:
+        text="very good";
+         break;
 
     default:
         text = "no";
         break;
 }
-console.log('text');
+console.log(text);
 
 
 

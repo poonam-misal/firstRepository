@@ -1,3 +1,15 @@
+//variable :--->It can store data and exchnge the data.
+//there are 2 types :--> 1> local variable -->Its allow to be use in some specific block of code.
+//                       2>  Globle variable --> It can defined anywhere in js code.
+
+//There are 4 rules:-->
+//1>can not use KEYWORDS. eg..case, break, do, else....
+//2>can not use NUMBERS.
+//3> used  ( _ ).
+//4>Case sensitive.
+
+
+//There are 3 ways to declare a JS variable.(var, let, const).
 first = 5;                                         //number
 //console.log(first);
 
@@ -7,7 +19,7 @@ second = 'variable'                                //string
 var third = [1, 2, 3];                            //array
 //console.log(third);
 
-let fourth = true;                               //bulate
+let fourth = true;                               //boolean
 //console.log(fourth)
 
 var five = null;                                 //value

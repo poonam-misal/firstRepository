@@ -1,29 +1,32 @@
-//number,string,null,undifined,boolean====>are primitive data type
-//object , array are Non primitivr data type
 
+//object , array are Non primitive data type
+//object, array reference data type  
 //object is data structure :key value pair.
+//object is collection of properties and methods.
 
 //array is a special case
 //var a = [1,2,3,4]
 
-
-//object is a data structure : key value pair;
-//object creation methods : properties and methods
 //age,name,qulifcation,gender  =====>  properties
 //etating,walking,reading,talking ===>  methods
 
+
+//1> normal object.
 var person = {};
-person.name = "someone";                        //push the value in person object.
+person.name = "someone";                        //pass the value using key.
 person.age = 25;
 
 person.eat = function(){
-    console.log("person is etting")
+    console.log("person is etting")                   //pass the method using function.
 }
+person.eat();
 console.log(person)                             //{ name: 'someone', age: 25, eat: [Function (anonymous)] }
-console.log(person.eat())                      //undefined
+// console.log(person.eat())                      //undefined
 console.log(person.name)
+console.log("xxxxxxx")
 
- //var obj = {};
+ 
+//var obj = {};
 
  //2 ====>  new object with new key
  var person = new Object();
@@ -36,16 +39,18 @@ console.log(person.name)
 
 
 
-//3 ====>
+//3 ====>object creat with it self key & value
+//dot and bracket notification.
 
-var person2 = {                           //object creat with object value
+var person2 = {                           
 name : "abc",
 age : 20,
 qulification : "BE",                      //  , importnat
 "123car" :"1234567"                        //  "" used for combination on number and string
 }
 person2.height = "180cm";                 // push the value in object using dot notification
-person2["gender"] = "female"              //bracket notification
+person2["gender"] = "female"              //bracket notification (we can not got the op with the help of dot.``)
+person2["13car"] = "12345";
 console.log(person2);
 
 console.log(person2["height"]);            ///gives the specific value of that point.
@@ -62,21 +67,21 @@ console.log(person2);
 
 
 
-//for in loop
+//for in loop      ----> loops through the properties of an object.
 
 for(var key in person2){
-    console.log(key += " " +person2[key]);
+    console.log(key += " " +person2[key]);           //get values all key in person2
 }
 
 
-//object reference data type + array
 
+//object.create ----->as like a parent and child.
 var car = {
     model : "maruti",
     price : 123456,                          //parent variable
 
 }
-var car1 = Object.create(car);                   //child 1 variable
+var car1 = Object.create(car);                   //child 1 variable (related to car.)
 var car2 = Object.create(car1);                 //child 2 variable
  //console.log(car1);
 car1.color ="gray";
@@ -115,6 +120,8 @@ console.log(car3.model);                      //tuv 700
 console.log(car3.__proto__);              //{ compony: 'mhindra', nme: 'xuv', color: 'red' }
 
 
+
+//------------------------------------------------------------------------------------------------------------//
 //object.assign
 let var1 = {fname:"alex"};
 let var2 ={lname:"simi"};
