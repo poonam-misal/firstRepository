@@ -1,0 +1,29 @@
+
+
+
+<!-- intrpoation -->
+
+<h2>{{name}}</h2><br>
+<h3>{{name2}}</h3><br><br>
+
+<!-- proprty or attribute -->
+<a [href]="link">Go To Google</a><br><br>
+<img [src]="image"><br> 
+
+<div class="demo"[style.background-color]="color">         <!--style attribute-->
+<h3 class="bg-warning">{{form}}</h3>
+Enter Your Name:<br> <input type="text" name="fullName" [value]="defaultName"><br>
+
+Enter Your Add:<br><input type="text" name="add" [value]="defaultAdd"><br>
+
+Enter Your Age:<br><input type="text" name="age"[(ngModel)]="age"><br>
+your age is {{age}}<br><br>
+
+Enter Your Email:<br><input type="text" name="email"[value]="defaultEmail"><br>
+Gender:<br><input type="radio" name="gender"[value]="gender">male
+           <input type="radio" name="gender"[value]="gender">female
+
+<br><br>
+<button class="btn btn-info" (click)="showData()">Submit</button>
+
+</div>

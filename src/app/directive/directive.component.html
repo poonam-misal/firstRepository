@@ -1,0 +1,40 @@
+
+
+<!-- structural directive (ngIf) -->
+
+<h3 *ngIf = "showDataFlag"> ngIf structural directive (adding and remove data)</h3>
+
+<select>
+    <option *ngFor = "let sc of section">{{sc}}</option>
+</select>
+
+
+<div [ngSwitch]="num">
+    <div *ngSwitchCase="'1'">One</div>
+    <div *ngSwitchCase="'2'">Two</div>
+    <div *ngSwitchCase="'3'">Three</div>
+    <div *ngSwitchCase="'4'">Four</div>
+    <div *ngSwitchCase="'5'">Five</div>
+    <div *ngSwitchDefault> This is Default Number </div>
+
+</div><br>
+
+
+<!-- ngClass & ngStyle (Attributes directive)-->
+<div [ngClass]="myClass1">
+    <p>This is to understand attribute directives</p>
+</div><br>
+
+
+<div [ngClass]="showDataFlag ? 'test1': 'test2'">
+    <p>this is to understand attribute directives with another example</p>
+</div><br> 
+
+<div [ngStyle]="{color,background,fontSize}">
+    <p>this is understand ngStyle attributedirective</p>
+</div>
+
+<div [ngStyle]="{'color': 'Red'}">
+    <p>this is understand ngStyle attributedirective</p>
+</div>  
+

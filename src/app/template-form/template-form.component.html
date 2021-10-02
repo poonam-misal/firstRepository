@@ -1,0 +1,49 @@
+<h3>template-form works</h3>
+<div class="container">
+    <form name="myForm" (ngSubmit)="onSubmitForm(frm)" #frm="ngForm">
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" class="form-control" name="fname" #fname="ngModel"ngModel>
+        </div>
+
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" name="lname" #lname="ngModel"ngModel>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email" #email="ngModel"ngModel>
+        </div>
+
+        <div class="form-group">
+            <label>Passward</label>
+            <input type="password" class="form-control" name="password" #password="ngModel"ngModel>
+        </div>
+
+        <div class="form-group">
+            <label>Confirm Passward</label>
+            <input type="password" class="form-control" name="password" #password="ngModel"ngModel>
+        </div>
+
+
+        <div class="form-group">
+            <label>Select Course</label>
+            <select class="from-control" name="course" #course="ngModel"ngModel>
+                <option *ngFor="let course of courses">{{course}}</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+            <input type="radio" name="gender" value='male' #gender="ngModel" ngModel>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value='female' #gender="ngModel" ngModel>
+            <label for="female">female</label>
+        </div>
+
+<div class="form-group">
+    <button type="submit" class="btn btn-warning">Submit</button>
+</div>
+    </form>
+</div>
